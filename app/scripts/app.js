@@ -16,8 +16,11 @@
          .state('album', {
              url: '/',
              templateUrl: '/templates/album.html'
+         })
+         state('album', {
+             url: '/',
+             templateUrl: '/templates/album.html'
          });
-         
 
     }
 
