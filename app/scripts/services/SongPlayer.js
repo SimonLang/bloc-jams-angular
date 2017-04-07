@@ -29,6 +29,7 @@
             currentSong = song;
         };
 
+        setSong(song);
  
         /**
          * @function playSong
@@ -48,7 +49,9 @@
          *  @param {Object} song
          */
           SongPlayer.play = function(song) {
+              console.log("play");
               if (currentSong !== song) {
+                  console.log("not the song");
                 setSong(song);
                 playSong(song);
 
