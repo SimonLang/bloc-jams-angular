@@ -63,7 +63,7 @@
         };
 
 
-        setSong(song);
+       // setSong(song);
 
 //Did I screw this up by taking it out of scope?
         /**
@@ -82,10 +82,12 @@
           SongPlayer.play = function(song) {
 
               console.log("play");
-              if (currentSong !== song) {
-                  console.log("not the song");
-
-              song = song || SongPlayer.currentSong;
+            //   if (SongPlayer.currentSong !== song) {
+            //       console.log("not the song");
+              
+            //       song = song || SongPlayer.currentSong;
+            //   }
+            song = song || SongPlayer.currentSong;
               if (SongPlayer.currentSong !== song) {
 
                 setSong(song);
