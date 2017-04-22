@@ -43,16 +43,16 @@
             return currentAlbum.songs.indexOf(song);
         };
 
-<<<<<<< HEAD
+
         setSong(song);
-=======
+
 //Did I screw this up by taking it out of scope?
         /**
          * @desc Active song object from list of songs
          * @type {Object}
          */
         SongPlayer.currentSong = null;
->>>>>>> checkpoint-8
+
  
 
         /**
@@ -73,14 +73,14 @@
          *  @param {Object} song
          */
           SongPlayer.play = function(song) {
-<<<<<<< HEAD
+
               console.log("play");
               if (currentSong !== song) {
                   console.log("not the song");
-=======
+
               song = song || SongPlayer.currentSong;
               if (SongPlayer.currentSong !== song) {
->>>>>>> checkpoint-8
+
                 setSong(song);
                 playSong(song);
 
