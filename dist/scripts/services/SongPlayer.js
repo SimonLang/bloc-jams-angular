@@ -96,6 +96,7 @@
              }  else if (SongPlayer.currentSong === song) {
                 if (currentBuzzObject.isPaused()) {
                     currentBuzzObject.play();
+                    song.playing = true; // set to true so that the pause button renders
                  }
              }     
         };
