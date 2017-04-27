@@ -32,7 +32,7 @@
                     return {width: percentString()};
                 };
 
-                scope.knobStyle = function() {
+                scope.thumbStyle = function() {
                     return {left: percentString()};
                 };
 
