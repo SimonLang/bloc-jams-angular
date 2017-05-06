@@ -89,7 +89,7 @@
          * @desc Volume of current song being played
          * @type {number}
          */
-        SongPlayer.volume = 90;
+        SongPlayer.volume = 75;
 
  
 
@@ -188,7 +188,7 @@
          * @param {Number} volume
          */
 
-        SongPlayer.volume = function(volume){
+        SongPlayer.setVolume = function(volume){
             if (currentBuzzObject){
                 currentBuzzObject.setVolume(volume);
             }
